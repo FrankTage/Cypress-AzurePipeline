@@ -6,5 +6,8 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
-  "reporter": "junit"
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "results/my-test-output-[hash].xml"
+  }
 });
